@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6fd231ca-6a33-4bfe-a7b8-b1489e7aa28c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cats.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WikiPages/california.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WikiPages/cat.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WikiPages/dog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetWebInfo/CreateFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetWebInfo/CreateFiles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GetWebInfo/GetUserWebPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetWebInfo/GetUserWebPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetWebInfo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetWebInfo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GetWebInfo/Html2Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetWebInfo/Html2Text.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GetWebInfo/UrlConnectionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetWebInfo/UrlConnectionReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetWebInfo/WriteToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GetWebInfo/WriteToFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,16 +86,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GetWebInfo/GetUserWebPage.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

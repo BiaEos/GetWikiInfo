@@ -15,9 +15,9 @@ import java.io.*;
 import static GetWebInfo.GetUserWebPage.wikiPage;
 
 public class UrlConnectionReader {
-    public String output;
+    private String output;
 
-    public String getUrlContents(String wikiPage) {
+    private String getUrlContents(String wikiPage) {
         StringBuilder content = new StringBuilder();
         try {
             URL url = new URL(wikiPage);

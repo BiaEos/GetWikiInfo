@@ -15,9 +15,7 @@ import java.io.IOException;
 import static java.lang.System.exit;
 
 public class CreateFiles {
-    public String path;
     public void createTempFile(String path) {
-        this.path = path;
         File file = new File(path);
         try {
             if (file.createNewFile()) {
@@ -32,7 +30,6 @@ public class CreateFiles {
     }
 
     public void createFile(String path) {
-        this.path = path;
         File file = new File(path);
         try {
             if (file.createNewFile()) {

@@ -9,15 +9,14 @@
 
 
 package GetWebInfo;
-
 import java.util.Scanner;
 
 public class GetUserWebPage {
     public static String topic;
     public static String wikiPage;
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
-    public void askUserTopic() {
+     void askUserTopic() {
         System.out.println("What topic would you like to search?");
         topic = scanner.nextLine();
     }

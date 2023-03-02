@@ -16,7 +16,7 @@ import javax.swing.text.html.*;
 import javax.swing.text.html.parser.*;
 
 public class Html2Text extends HTMLEditorKit.ParserCallback {
-    StringBuffer stringBuffer;
+    private StringBuffer stringBuffer;
     private boolean inP = false;
 
     public Html2Text() {
