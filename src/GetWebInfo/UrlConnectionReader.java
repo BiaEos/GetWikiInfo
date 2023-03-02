@@ -14,14 +14,13 @@ import java.net.*;
 import java.io.*;
 
 public class UrlConnectionReader {
-    public String url = "https://en.wikipedia.org/wiki/Cyclone_Dumazile";
     public String output;
 
-    public String getUrlContents(String theUrl) {
+    public String getUrlContents(String wikiPage) {
+        System.out.println(wikiPage);
         StringBuilder content = new StringBuilder();
-
         try {
-            URL url = new URL(theUrl);
+            URL url = new URL(wikiPage);
             URLConnection urlConnection = url.openConnection();
             BufferedReader bufferedReader = new BufferedReader(
                     new InputStreamReader(urlConnection.getInputStream())
@@ -39,7 +38,11 @@ public class UrlConnectionReader {
     }
 
     public String getOutput() {
-        output = getUrlContents(url);
+        GetUserWebPage userWebPage = new GetUserWebPage();
+        userWebPage.getUserWebPage();
+        String wikiPage = userWebPage.getWikiPage();
+
+        output = getUrlContents(wikiPage);
         return output;
     }
 }

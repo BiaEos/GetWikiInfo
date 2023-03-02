@@ -1,12 +1,18 @@
 package GetWebInfo;
 
 import java.io.FileReader;
+import java.sql.SQLOutput;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        GetUserWebPage userTopic = new GetUserWebPage();
+        userTopic.getUserTopic();
+        String topic = userTopic.getTopic();
+
         CreateFiles newFile = new CreateFiles();
-        String path = "/Users/main/Projects/GetWebInfo/WebsiteHTML.txt";
-        String pathOut = "/Users/main/Projects/GetWebInfo/WebsiteText.txt";
+        String path = "/Users/main/Projects/GetWebInfo/" + topic + "HTML.txt";
+        String pathOut = "/Users/main/Projects/GetWebInfo/" + topic + ".txt";
         newFile.createTempFile(path);
         newFile.createFile(pathOut);
 
@@ -14,7 +20,6 @@ public class Main {
         writeFile.writeHTMLToFile(path);
 
         try {
-            // the HTML to convert
             FileReader in = new FileReader(path);
             Html2Text parser = new Html2Text();
             parser.parse(in);
@@ -24,8 +29,5 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
-
     }
 }
