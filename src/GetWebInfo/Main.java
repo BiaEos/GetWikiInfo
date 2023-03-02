@@ -1,18 +1,21 @@
 package GetWebInfo;
 
 import java.io.FileReader;
-import java.sql.SQLOutput;
-import java.util.Scanner;
+
+import static GetWebInfo.GetUserWebPage.topic;
+import static GetWebInfo.GetUserWebPage.wikiPage;
 
 public class Main {
+
     public static void main(String[] args) {
         GetUserWebPage userTopic = new GetUserWebPage();
         userTopic.askUserTopic();
-        String topic = userTopic.getTopic();
+        topic = userTopic.getTopic();
+        wikiPage = userTopic.getWikiPage();
 
         CreateFiles newFile = new CreateFiles();
-        String path = "/Users/main/Projects/GetWebInfo/" + topic + "HTML.txt";
-        String pathOut = "/Users/main/Projects/GetWebInfo/" + topic + ".txt";
+        String path = "/Users/main/Projects/GetWebInfo/WikiPages/" + topic + "HTML.txt";
+        String pathOut = "/Users/main/Projects/GetWebInfo/WikiPages/" + topic + ".txt";
         newFile.createTempFile(path);
         newFile.createFile(pathOut);
 

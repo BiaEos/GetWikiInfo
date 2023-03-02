@@ -13,17 +13,13 @@ package GetWebInfo;
 import java.util.Scanner;
 
 public class GetUserWebPage {
-    public String topic;
-    public String wikiPage;
+    public static String topic;
+    public static String wikiPage;
     Scanner scanner = new Scanner(System.in);
 
     public void askUserTopic() {
         System.out.println("What topic would you like to search?");
         topic = scanner.nextLine();
-    }
-    public void askUserWebPage() {
-        System.out.println("Please type the WikiPage you'd like to read:");
-        wikiPage = scanner.nextLine();
     }
 
     public String getTopic() {
@@ -31,6 +27,7 @@ public class GetUserWebPage {
     }
 
     public String getWikiPage() {
+        wikiPage = "https://en.wikipedia.org/wiki/" + topic;
         return wikiPage;
     }
 }

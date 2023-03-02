@@ -12,6 +12,7 @@ package GetWebInfo;
 
 import java.net.*;
 import java.io.*;
+import static GetWebInfo.GetUserWebPage.wikiPage;
 
 public class UrlConnectionReader {
     public String output;
@@ -37,9 +38,6 @@ public class UrlConnectionReader {
     }
 
     public String getOutput() {
-        GetUserWebPage userWebPage = new GetUserWebPage();
-        userWebPage.askUserWebPage();
-        String wikiPage = userWebPage.getWikiPage();
         output = getUrlContents(wikiPage);
         return output;
     }
