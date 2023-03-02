@@ -17,7 +17,6 @@ public class UrlConnectionReader {
     public String output;
 
     public String getUrlContents(String wikiPage) {
-        System.out.println(wikiPage);
         StringBuilder content = new StringBuilder();
         try {
             URL url = new URL(wikiPage);
@@ -39,9 +38,8 @@ public class UrlConnectionReader {
 
     public String getOutput() {
         GetUserWebPage userWebPage = new GetUserWebPage();
-        userWebPage.getUserWebPage();
+        userWebPage.askUserWebPage();
         String wikiPage = userWebPage.getWikiPage();
-
         output = getUrlContents(wikiPage);
         return output;
     }

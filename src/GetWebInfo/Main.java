@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         GetUserWebPage userTopic = new GetUserWebPage();
-        userTopic.getUserTopic();
+        userTopic.askUserTopic();
         String topic = userTopic.getTopic();
 
         CreateFiles newFile = new CreateFiles();
